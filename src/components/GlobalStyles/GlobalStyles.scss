@@ -1,0 +1,47 @@
+@import 'normalize.css';
+
+:root {
+    --primary-color:  #2B284E;
+    --active-color: #FFEA3D;
+
+
+
+
+    --main-navbar-color: #eef6f9;
+    --main-border-radius: 20px;
+    --main-margin: 20px;
+    --navbarlayout-height: 130px;
+    --navbarlayout-header-height: 79px;
+    --navbarlayout-height-jsx: 130;
+    --navbarlayout-header-height-jsx: 79;
+    --secondary-color: #e88900;
+    --third-color: #794802;
+    --primary-fontweight: 600;
+    --secondary-fontweight: 500;
+    --background-btn-disable: #e0e5f2;
+    --color-btn-disable: #878a92;
+    --twelve-px: 1.2rem;
+    --thirteen-px: 1.3rem;
+    --fourteen-px: 1.4rem;
+    --sixteen-px: 1.6rem;
+    --eighteen-px: 1.8rem;
+    --twenty-one-px: 2.1rem;
+   
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'SF Pro Display', sans-serif;
+    font-size: var(--sixteen-px);
+    text-rendering: optimizeSpeed;
+}
+a {
+    text-decoration: none;
+}
