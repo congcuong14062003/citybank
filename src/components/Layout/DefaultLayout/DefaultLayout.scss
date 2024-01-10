@@ -1,0 +1,8 @@
+.container_content {
+    display: flex;
+    background-color: var(--primary-color);
+    padding: 20px 10px;
+    .content_right {
+        margin-left: calc(var(--width-sidebar) + 10px);
+    }
+}

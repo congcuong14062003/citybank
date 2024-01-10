@@ -1,3 +1,4 @@
+import CaiDatBank from '../pages/CaiDatBank/CaiDatBank.jsx';
 import Giftcode from '../pages/Giftcode/Giftcode.jsx';
 import Home from '../pages/Home/Home.jsx';
 import Login from '../pages/Login/Login';
@@ -17,6 +18,10 @@ const publicRouter = [
     {
         path: '/',
         component: Home,
+    },
+    {
+        path: '/caidatbank',
+        component: CaiDatBank,
     },
     {
         path: '/giftcode',

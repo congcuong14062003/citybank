@@ -1,17 +1,15 @@
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import images from '../../assets/imgs';
+import './Login.scss';
 function Login() {
     const navigate = useNavigate();
 
     const handleLogin = () => {
-      // Xử lý logic đăng nhập ở đây
-  
-      // Sau khi đăng nhập thành công, chuyển hướng về trang chủ
-      navigate('/');
+        navigate('/');
     };
     return (
-        <div className="sign-up section--bg">
+        <div className="login section--bg">
             <img className="support_img" src={images.support} alt="" />
             <div className="container">
                 <div className="row">
