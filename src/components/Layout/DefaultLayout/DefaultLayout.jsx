@@ -1,4 +1,3 @@
-import Header from './Header/Header';
 import SideBar from './SideBar/SideBar';
 import './DefaultLayout.scss';
 function DefaultLayout({ children }) {
@@ -6,7 +5,6 @@ function DefaultLayout({ children }) {
             <div className="container_content">
                 <SideBar />
                 <div className="content_right">
-                    <Header />
                     {children}
                 </div>
             </div>

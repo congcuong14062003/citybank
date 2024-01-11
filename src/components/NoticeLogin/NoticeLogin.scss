@@ -1,0 +1,16 @@
+.notice_login_container {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    p {
+        font-size: var(--fourteen-px);
+        font-weight: var(--third-fontweight);
+        color: #fff;
+        text-transform: uppercase;
+        a {
+            color: var(--active-color);
+            text-decoration: underline;
+            font-weight: var(--primary-fontweight);
+        }
+    }
+}

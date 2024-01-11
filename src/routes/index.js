@@ -1,3 +1,5 @@
+import ChanLeTaiXiu from '../components/ChanLeTaiXiu/ChanLeTaiXiu.jsx';
+import ThongTinBankNhan from '../components/ThongTinBankNhan/ThongTinBankNhan.jsx';
 import CaiDatBank from '../pages/CaiDatBank/CaiDatBank.jsx';
 import Giftcode from '../pages/Giftcode/Giftcode.jsx';
 import Home from '../pages/Home/Home.jsx';
@@ -8,16 +10,23 @@ const publicRouter = [
     {
         path: '/login',
         component: Login,
-        layout: null
+        layout: null,
     },
     {
         path: '/signup',
         component: Signup,
-        layout: null
+        layout: null,
     },
     {
         path: '/',
         component: Home,
+        childrenRouter: [
+            { path: 'taixiu', component: <ChanLeTaiXiu /> },
+            {
+                path: 'chanle',
+                component: <ThongTinBankNhan />,
+            },
+        ],
     },
     {
         path: '/caidatbank',
@@ -31,7 +40,6 @@ const publicRouter = [
         path: '/nhiemvungay',
         component: Nhiemvungay,
     },
- 
 ];
-const privateRouter = []
-export {publicRouter, privateRouter}
+const privateRouter = [];
+export { publicRouter, privateRouter };

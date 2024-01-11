@@ -1,0 +1,15 @@
+.copyright_footer {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    p {
+        text-transform: uppercase;
+        font-size: var(--sixteen-px);
+        font-weight: var(--third-fontweight);
+        color: #fff;
+        a {
+            text-decoration: underline;
+            color: #fff;
+        }
+    }
+}

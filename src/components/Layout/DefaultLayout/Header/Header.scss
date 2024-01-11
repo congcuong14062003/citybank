@@ -1,0 +1,83 @@
+.profile__content {
+    background: linear-gradient(180deg, rgba(38, 34, 80, 0.65) 0%, rgba(27, 25, 66, 0.85) 57.44%, #17163b 100%);
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 10px;
+    height: 54px;
+    display: flex;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    .profile__tabs {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        overflow: hidden;
+        border: none;
+        li {
+            margin-right: 20px;
+            button {
+                height: 54px;
+                font-size: var(--fourteen-px);
+                font-weight: var(--third-fontweight);
+                opacity: var(--main-opacity);
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+                height: 50px;
+                color: #fff;
+                position: relative;
+                color: #c7c7c7;
+                padding: 0 10px;
+                border: none;
+                outline: none;
+                background-color: transparent;
+                transition: 0.5s ease;
+                transition-property: color, background-color, border-color, box-shadow, opacity;
+                cursor: pointer;
+                &.active {
+                    color: var(--active-color);
+                    opacity: 1;
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        bottom: -10%;
+                        left: 0;
+                        right: 0;
+                        height: 10px;
+                        display: block;
+                        background: radial-gradient(
+                            43.97% 43.97% at 50% 51.18%,
+                            #ffe500 0%,
+                            rgba(243, 246, 50, 0.264719) 50%,
+                            rgba(234, 201, 83, 0.0001) 100%
+                        );
+                        box-shadow: none;
+                        transition: 0.5s ease;
+                        border-radius: 2px 2px 0 0;
+                    }
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        top: -10%;
+                        left: 0;
+                        right: 0;
+                        height: 10px;
+                        display: block;
+                        background: radial-gradient(
+                            43.97% 43.97% at 50% 51.18%,
+                            #ffe500 0%,
+                            rgba(243, 246, 50, 0.264719) 50%,
+                            rgba(234, 201, 83, 0.0001) 100%
+                        );
+                        box-shadow: none;
+                        transition: 0.5s ease;
+                        border-radius: 2px 2px 0 0;
+                    }
+                }
+            }
+        }
+    }
+}
