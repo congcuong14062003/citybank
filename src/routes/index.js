@@ -10,12 +10,12 @@ const publicRouter = [
     {
         path: '/login',
         component: Login,
-        layout: null,
+        layout: Login,
     },
     {
         path: '/signup',
         component: Signup,
-        layout: null,
+        layout: Signup,
     },
     {
         path: '/',

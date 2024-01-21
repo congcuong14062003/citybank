@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom';
-import images from '../../../../../assets/imgs';
+import images from '../../../../assets/imgs';
 
 function MenuItem({ to, icon, title, className }) {
     const classes = `menu_items ${className}`;

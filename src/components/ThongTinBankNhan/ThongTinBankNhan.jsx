@@ -1,7 +1,8 @@
 import React from 'react';
 import './ThongTinBankNhan.scss';
 import DashBox from '../DashBox/DashBox';
-import { ThongTinBankNhanIcon } from '../../assets/icons/icons';
+import { QrcodeIcon, ThongTinBankNhanIcon } from '../../assets/icons/icons';
+import images from '../../assets/imgs';
 const ThongTinBankNhan = () => {
     return (
         <DashBox title="thông tin bank nhận" icon={<ThongTinBankNhanIcon />}>
@@ -38,22 +39,15 @@ const ThongTinBankNhan = () => {
                             <div className="dashbox__table-text">3.000.000</div>
                         </td>
                         <td>
-                            <button className="qrc catalog__btn catalog__btn--banned">
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="16"
-                                    height="16"
-                                    fill="currentColor"
-                                    className="bi bi-qr-code-scan"
-                                    viewBox="0 0 16 16"
-                                >
-                                </svg>
-                            </button>
+                            <QrcodeIcon />
                         </td>
                     </tr>
                 </tbody>
             </table>
             {/* <NoticeLogin /> */}
+            <div className="sukien_hot">
+                <img src={images.sukienhot} alt="" />
+            </div>
         </DashBox>
     );
 };

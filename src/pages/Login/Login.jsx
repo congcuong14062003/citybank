@@ -2,6 +2,7 @@ import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import images from '../../assets/imgs';
 import './Login.scss';
+import PrimaryButton from '../../components/PrimaryButton/PrimaryButton';
 function Login() {
     const navigate = useNavigate();
 
@@ -42,9 +43,9 @@ function Login() {
                                             placeholder="Mật khẩu"
                                         />
                                     </div>
-                                    <button className="sign__btn" type="submit" onClick={handleLogin}>
-                                        <span>ĐĂNG NHẬP</span>
-                                    </button>
+
+                                    <PrimaryButton title="đăng nhập" onClick={handleLogin} />
+
                                     <div className="sign__text_signup">
                                         <span className="">
                                             Chưa có tài khoản <Link to="/signup">Đăng ký</Link>

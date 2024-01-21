@@ -1,12 +1,15 @@
+import { useEffect, useRef } from 'react';
 import HeadingTitle from '../HeadingTitle/HeadingTitle';
 import './DashBox.scss';
-function DashBox({ children, className, title, icon}) {
+function DashBox({ children, className, title, icon }) {
+    const classes = `dashbox ${className}`;
     return (
-        <div class="dashbox">
+        <div className={classes}>
             <HeadingTitle icon={icon} title={title} />
-            <div class="dashbox__table-wrap">
-                <div class="scroll-content">{children}</div>
+            <div className="dashbox__table-wrap">
+                <div className="scroll-content">{children}</div>
             </div>
+            
         </div>
     );
 }

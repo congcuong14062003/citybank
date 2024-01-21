@@ -1,0 +1,36 @@
+.button_primary {
+    .sign__btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        height: 50px;
+        width: 100%;
+        border-radius: var(--radius-8px);
+        background: var(--active-color);
+        box-shadow: 0 0 16px 0 rgba(255, 88, 96, 0.3);
+        // box-shadow: 0px 1px 2px 0px #1018280D;
+        position: relative;
+        // &:before {
+        //     content: '';
+        //     position: absolute;
+        //     z-index: 1;
+        //     top: 0;
+        //     right: 0;
+        //     bottom: 0;
+        //     left: 0;
+        //     background: rgba(255, 234, 61, 1);
+        //     border-radius: 8px;
+        //     opacity: 1;
+        //     transition: opacity 0.5s ease;
+        // }
+        span {
+            font-size: var(--sixteen-px);
+            color: var(--primary-text-color);
+            text-transform: uppercase;
+            font-weight: var(--primary-fontweight);
+            position: relative;
+            z-index: 2;
+        }
+    }
+}

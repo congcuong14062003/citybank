@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Header.scss';
-import ChanLeTaiXiu from '../../../ChanLeTaiXiu/ChanLeTaiXiu';
-import ThongTinBankNhan from '../../../ThongTinBankNhan/ThongTinBankNhan';
+import ThongTinBankNhan from '../../../components/ThongTinBankNhan/ThongTinBankNhan';
+import ChanLeTaiXiu from '../../../components/ChanLeTaiXiu/ChanLeTaiXiu';
 
 function Header({ onTitleClick }) {
     const dataMenuHeader = [

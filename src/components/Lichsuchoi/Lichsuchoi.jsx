@@ -4,7 +4,7 @@ import './Lichsuchoi.scss';
 function Lichsuchoi() {
     return (
         <DashBox title="Lịch sử chơi gần đây" icon={<LichSuChoiIcon />}>
-            <table class="dashbox__table">
+            <table className="dashbox__table">
                 <thead>
                     <tr>
                         <th>MÃ GIAO DỊCH</th>

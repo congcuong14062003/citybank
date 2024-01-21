@@ -1,12 +1,12 @@
 import { Link, useNavigate } from 'react-router-dom';
 import images from '../../assets/imgs';
 import './Signup.scss';
+import PrimaryButton from '../../components/PrimaryButton/PrimaryButton';
 function Signup() {
     const navigate = useNavigate();
 
     const handleSignup = () => {
-  
-      navigate('/login');
+        navigate('/login');
     };
     return (
         <div className="sign-up section--bg">
@@ -54,16 +54,13 @@ function Signup() {
                                         />
                                     </div>
 
-                                    <button className="sign__btn" type="submit" onClick={handleSignup}>
-                                        <span>ĐĂNG KÝ</span>
-                                    </button>
+                                    <PrimaryButton title="đăng ký" onClick={handleSignup} />
                                     <div className="sign__text_signup">
                                         <span className="">
                                             Đã có tài khoản <Link to="/login">Đăng nhập</Link>
                                         </span>
                                     </div>
                                 </form>
-                                {/* end authorization form */}
                             </div>
                         </div>
                     </div>

@@ -1,5 +1,6 @@
 .dashbox {
     display: flex;
+    min-height: 200px;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
@@ -15,6 +16,7 @@
         display: block;
         width: 100%;
         padding: 30px 0 20px;
+        // overflow: scroll;
         .dashbox__table {
             width: 100%;
             thead {
@@ -23,11 +25,12 @@
                     padding-left: 20px;
                 }
                 th {
-                    font-size: 12px;
-                    color: #c7c7c7;
+                    white-space: nowrap;
+                    font-size: var(--twelve-px);
+                    color: #79778a;
                     padding: 0 5px 15px 5px;
                     line-height: 100%;
-                    font-weight: 300;
+                    font-weight: var(--secondary-fontweight);
                     border: none;
                 }
             }
@@ -51,23 +54,39 @@
                             justify-content: flex-start;
                             align-items: center;
                             position: relative;
-                            font-size: 14px;
+                            font-size: var(--fourteen-px);
                             color: #fff;
-                            font-family: 'Open Sans', sans-serif;
-                            font-weight: 400;
+                            font-weight: var(--third-fontweight);
                             line-height: 24px;
+                            .content_icon_text {
+                                margin-left: 5px;
+                            }
                             code {
-                                padding: 0px 7px;
                                 margin-right: 5px;
+                                width: 24px;
+                                height: 24px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
                                 font-size: 12.5px;
-                                color: rgba(255, 234, 61, 1);
-                                background-color: rgba(123, 97, 255, 1);
+                                color: var(--active-color);
+                                background-color: #7b61ff;
                                 white-space: nowrap;
                                 border-radius: 4px;
                             }
                         }
                     }
                 }
+            }
+        }
+
+        .subpage-wrapper {
+            width: 100%;
+            text-align: center;
+            padding: 25px 0 20px 0;
+            form {
+                max-width: 400px;
+                margin: 0 auto;
             }
         }
     }
@@ -77,5 +96,26 @@
         font-size: var(--fourteen-px);
         color: #fff;
         font-weight: var(--third-fontweight);
+    }
+    .scrollbar-track {
+        position: absolute;
+        z-index: 1;
+        background: rgba(222, 222, 222, 0.75);
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        -webkit-transition: opacity 0.5s 0.5s ease-out;
+        transition: opacity 0.5s 0.5s ease-out;
+    }
+}
+.center_heading {
+    .dashbox__title {
+        justify-content: center;
+        svg {
+            path {
+                stroke: var(--active-color);
+            }
+        }
     }
 }

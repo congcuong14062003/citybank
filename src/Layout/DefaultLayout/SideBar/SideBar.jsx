@@ -1,8 +1,8 @@
 import './SideBar.scss';
-import images from '../../../../assets/imgs';
-import { CaiDatBankIcon, GiftcodeIcon, HomeIcon, LogoutIcon, NhiemVuNgayIcon } from '../../../../assets/icons/icons';
+import { CaiDatBankIcon, GiftcodeIcon, HomeIcon, LogoutIcon, NhiemVuNgayIcon } from '../../../assets/icons/icons';
 import Menu, { MenuItem } from './Menu';
-import config from '../../../../configs';
+import config from '../../../configs';
+import images from '../../../assets/imgs';
 function SideBar() {
     const dataMenu = [
         {
