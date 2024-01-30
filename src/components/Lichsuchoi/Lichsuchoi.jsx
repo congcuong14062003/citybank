@@ -7,13 +7,15 @@ function Lichsuchoi() {
             <table className="dashbox__table">
                 <thead>
                     <tr>
+                    <th>Trò chơi</th>
+                    <th>Đã chọn</th>
                         <th>MÃ GIAO DỊCH</th>
-                        <th>MÃ GIAO DỊCH CHUYỂN ĐỔI</th>
-                        <th>TIỀN CƯỢC</th>
-                        <th>KEYWORD</th>
+                        <th>Số tiền</th>
                         <th>KẾT QUẢ</th>
                         <th>TRẢ THƯỞNG</th>
                         <th>THỜI GIAN</th>
+                        <th>sao kê</th>
+                        <th>ghi chú</th>
                     </tr>
                 </thead>
                 <tbody></tbody>

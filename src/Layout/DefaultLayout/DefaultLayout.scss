@@ -3,6 +3,7 @@
     background-color: var(--primary-color);
     padding: 20px 10px;
     min-height: 100vh;
+    position: relative;
     .support_container {
         position: fixed;
         z-index: 999;
@@ -13,4 +14,8 @@
         margin-left: calc(var(--width-sidebar) + 10px);
         width: 100%;
     }
+}
+.footer_content {
+  padding: 20px;
+    background-color: var(--primary-color);
 }

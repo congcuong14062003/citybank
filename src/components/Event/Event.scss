@@ -1,0 +1,81 @@
+.modal-dialog .modal-content {
+    min-width: 800px;
+    .profile__content_event {
+        display: flex;
+        justify-content: center;
+    }
+    .nav-event {
+        position: relative;
+        color: #a3a3a3;
+    }
+    .nav-event.active {
+        color: rgba(255, 234, 61, 1) !important;
+        background-color: unset !important;
+        &::before {
+            content: '';
+            position: absolute;
+            bottom: -10%;
+            left: 0;
+            right: 0;
+            height: 10px;
+            display: block;
+            background: radial-gradient(
+                43.97% 43.97% at 50% 51.18%,
+                #ffe500 0%,
+                rgba(243, 246, 50, 0.264719) 50%,
+                rgba(234, 201, 83, 0.0001) 100%
+            );
+            box-shadow: none;
+            transition: 0.5s ease;
+            border-radius: 2px 2px 0 0;
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            top: -10%;
+            left: 0;
+            right: 0;
+            height: 10px;
+            display: block;
+            background: radial-gradient(
+                43.97% 43.97% at 50% 51.18%,
+                #ffe500 0%,
+                rgba(243, 246, 50, 0.264719) 50%,
+                rgba(234, 201, 83, 0.0001) 100%
+            );
+            box-shadow: none;
+            transition: 0.5s ease;
+            border-radius: 2px 2px 0 0;
+        }
+    }
+}
+.title-vinhdanh {
+    h3 {
+        text-align: center;
+    }
+}
+.user-event-info {
+    font-size: var(--fourteen-px);
+    font-weight: var(--primary-fontweight);
+    color: #fff;
+    .infor_detail {
+        display: flex;
+        align-items: center;
+        span {
+            margin-left: 5px;
+            color: var(--active-color);
+        }
+    }
+}
+.title-vinhdanh {
+    text-align: center;
+    font-weight: var(--third-fontweight);
+    .title_vinh_danh_top {
+        font-size: var(--twelve-px);
+        color: var(--title-color);
+    }
+    .top_vinhdanh {
+        font-size: var(--fourteen-px);
+        color: #fff
+    }
+}

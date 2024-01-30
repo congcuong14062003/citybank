@@ -1,267 +1,173 @@
 import { CloseBtn, DiemDanhIcon, FlagDiemDanh } from '../../assets/icons/icons';
 import images from '../../assets/imgs';
+import HeadingTitle from '../HeadingTitle/HeadingTitle';
+import ModelEvent from '../ModelEvent/ModelEvent';
+import TitleEvent from '../TitleEvent/TitleEvent';
 import './Event.scss';
-function Event({ handleHiddenSuKien }) {
+function Event({handleHiddenSuKien}) {
     return (
-        <div
-            className="modal fade show"
-            id="modalMuster"
-            tabIndex="-1"
-            aria-labelledby="modelTitleId"
-            style={{ display: 'block', paddingLeft: '0px' }}
-            aria-modal="true"
-            role="dialog"
-        >
-            <div className="modal-dialog modal-lg modal-dialog-centered modal-attendance" role="document">
-                <div className="modal-content">
-                    <div className="div-flag-attendance">
-                        <div className="img-backgroud-flag-attendance">
-                            <img src={images.modalheader} alt="" />
-                            <div className="icon_flag">
-                                <FlagDiemDanh />
+        <ModelEvent onClick={handleHiddenSuKien}>
+            <div className="modal-body">
+                <div className="row">
+                    <div className="profile__content_event">
+                        <ul className="nav nav-pills profile__tabs_event mb-3" id="pills-tab" role="tablist">
+                            <li className="nav-item" role="presentation">
+                                <button
+                                    className="nav-event nav-link active"
+                                    id="pills-home-tab"
+                                    data-bs-toggle="pill"
+                                    data-bs-target="#event-vinhdanh"
+                                    type="button"
+                                    role="tab"
+                                    aria-controls="pills-home"
+                                    aria-selected="true"
+                                >
+                                    VINH DANH
+                                </button>
+                            </li>
+                            <li className="nav-item" role="presentation">
+                                <button
+                                    className="nav-event nav-link"
+                                    id="pills-profile-tab"
+                                    data-bs-toggle="pill"
+                                    data-bs-target="#event-thele"
+                                    type="button"
+                                    role="tab"
+                                    aria-controls="pills-profile"
+                                    aria-selected="false"
+                                    tabIndex="-1"
+                                >
+                                    THỂ LỆ
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div className="tab-content" id="pills-tabContent">
+                    <div
+                        id="event-vinhdanh"
+                        className="tab-pane fade show active"
+                        aria-labelledby="pills-home-tab"
+                        role="tabpanel"
+                    >
+                        <div className="mb-4">
+                            <div className="col-12 title-vinhdanh">
+                                <TitleEvent title="🏆 Top đu dây THẮNG ngày 2023-11-25" date="2023-11-25" />
+                            </div>
+                            <div className="table-responsive mb-3">
+                                <table className="table card-table table-vcenter text-nowrap table-bordered table-striped text-center">
+                                    <thead className="badge-primary text-white">
+                                        <tr>
+                                            <th className="text-center text-white">TOP</th>
+                                            <th className="text-center text-white">ID</th>
+                                            <th className="text-center text-white">DÂY</th>
+                                            <th className="text-center text-white">TỔNG CƯỢC</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>6468118****</td>
+                                            <td>8</td>
+                                            <td>100.000 ₫</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>6468118****</td>
+                                            <td>6</td>
+                                            <td>100.000 ₫</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>6468118****</td>
+                                            <td>7</td>
+                                            <td>100.000 ₫</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div className="col-12 user-event-info">
+                                <div className="infor_detail">
+                                    <div>Dây Của Bạn: </div>
+                                    <span>0</span>
+                                </div>
+                                <div className="infor_detail">
+                                    <div>Thứ Hạng Của Bạn: </div>
+                                    <span>Không xác định</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="mb-4">
+                            <div className="col-12 title-vinhdanh">
+                                <TitleEvent title="🏆 Top đu dây thua ngày 2023-11-25" date="2023-11-25" />
+                            </div>
+                            <div className="table-responsive mb-3">
+                                <table className="table card-table table-vcenter text-nowrap table-bordered table-striped text-center">
+                                    <thead className="badge-primary text-white">
+                                        <tr>
+                                            <th className="text-center text-white">TOP</th>
+                                            <th className="text-center text-white">ID</th>
+                                            <th className="text-center text-white">DÂY</th>
+                                            <th className="text-center text-white">TỔNG CƯỢC</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>6468118****</td>
+                                            <td>8</td>
+                                            <td>100.000 ₫</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>6468118****</td>
+                                            <td>6</td>
+                                            <td>100.000 ₫</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>6468118****</td>
+                                            <td>7</td>
+                                            <td>100.000 ₫</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div className="col-12 user-event-info">
+                                <div className="infor_detail">
+                                    <div>Dây Của Bạn: </div>
+                                    <span>0</span>
+                                </div>
+                                <div className="infor_detail">
+                                    <div>Thứ Hạng Của Bạn: </div>
+                                    <span>Không xác định</span>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    {/* <div className="modal-header-attendance modal-header">
-                        <h5 className="modal-title-attendance modal-title" style={{ color: 'white' }}>
-                            ĐIỂM DANH NHẬN QUÀ MIỄN PHÍ
-                        </h5>
-                        <button type="button" className="close close_diemdanh" onClick={handleHiddenSuKien}>
-                            <span aria-hidden="true" style={{ color: 'white' }}>
-                                <CloseBtn />
-                            </span>
-                        </button>
-                    </div> */}
-                    <div className="modal-body">
-                        <div className="row mt-2 mb-2">
-                            <div className="form-group">
-                                <div className="row gutters-xs">
-                                    <span className="col text-center">
-                                        <button
-                                            className="btn btn-success-gradient"
-                                            id="btnMuster"
-                                            data-bs-toggle="tooltip"
-                                            data-placement="top"
-                                            title=""
-                                            data-original-title="Điểm danh"
-                                        >
-                                            <DiemDanhIcon /> ĐIỂM DANH HÀNG NGÀY
-                                        </button>
-                                        <p className="history_diemdanh">Lịch sử điểm danh tuần</p>
-                                    </span>
-                                </div>
+                    <div id="event-thele" className="tab-pane fade" role="tabpanel" aria-labelledby="pills-profile-tab">
+                        <div className="col-12 title-vinhdanh">
+                            <div>
+                                <TitleEvent title="🏆  Đu dây Thắng dài nhất" />
                             </div>
-                            <div className="col">
-                                <div
-                                    className="timeline-steps aos-init aos-animate"
-                                    data-aos="fade-up"
-                                    id="diemdanh-his"
-                                >
-                                    <div className="timeline-step">
-                                        <div className="timeline-content">
-                                            <div className="p-1 rounded-circle">
-                                                <img
-                                                    width="32"
-                                                    height="32"
-                                                    src="https://citybank.club/public/assets/img/not-attendance.png"
-                                                    alt="fail"
-                                                />
-                                            </div>
-                                            <p className="">T2</p>
-                                        </div>
-                                    </div>
-
-                                    <div className="timeline-step">
-                                        <div className="timeline-content">
-                                            <div className="p-1 rounded-circle">
-                                                <img
-                                                    width="32"
-                                                    height="32"
-                                                    src="https://citybank.club/public/assets/img/attendance.png"
-                                                    alt="true"
-                                                />
-                                            </div>
-                                            <p className="">T3</p>
-                                        </div>
-                                    </div>
-
-                                    <div className="timeline-step">
-                                        <div className="timeline-content">
-                                            <div className="p-1 rounded-circle">
-                                                <img
-                                                    width="32"
-                                                    height="32"
-                                                    src="https://citybank.club/public/assets/img/not-attendance.png"
-                                                    alt="fail"
-                                                />
-                                            </div>
-                                            <p className="">T4</p>
-                                        </div>
-                                    </div>
-
-                                    <div className="timeline-step">
-                                        <div className="timeline-content">
-                                            <div className="p-1 rounded-circle">
-                                                <img
-                                                    width="32"
-                                                    height="32"
-                                                    src="https://citybank.club/public/assets/img/not-attendance.png"
-                                                    alt="fail"
-                                                />
-                                            </div>
-                                            <p className="">T5</p>
-                                        </div>
-                                    </div>
-
-                                    <div className="timeline-step">
-                                        <div className="timeline-content">
-                                            <div className="p-1 rounded-circle">
-                                                <img
-                                                    width="32"
-                                                    height="32"
-                                                    src="https://citybank.club/public/assets/img/not-attendance.png"
-                                                    alt="fail"
-                                                />
-                                            </div>
-                                            <p className="">T6</p>
-                                        </div>
-                                    </div>
-
-                                    <div className="timeline-step">
-                                        <div className="timeline-content">
-                                            <div className="p-1 rounded-circle">
-                                                <img
-                                                    width="32"
-                                                    height="32"
-                                                    src="https://citybank.club/public/assets/img/not-attendance.png"
-                                                    alt="fail"
-                                                />
-                                            </div>
-                                            <p className="">T7</p>
-                                        </div>
-                                    </div>
-
-                                    <div className="timeline-step">
-                                        <div className="timeline-content">
-                                            <div className="p-1 rounded-circle">
-                                                <img
-                                                    width="32"
-                                                    height="32"
-                                                    src="https://citybank.club/public/assets/img/not-attendance.png"
-                                                    alt="fail"
-                                                />
-                                            </div>
-                                            <p className="">CN</p>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div className="title_vinh_danh_top">(Tổng cược tối thiểu 50k)</div>
+                            <div className="top_vinhdanh">TOP 1: Thưởng 100k</div>
+                            <div className="top_vinhdanh">TOP 2: Thưởng 50k</div>
+                            <div className="top_vinhdanh">TOP 3: Thưởng 30k</div>
+                        </div>
+                        <div className="col-12 title-vinhdanh">
+                            <div>
+                                <TitleEvent title="🏆  Đu dây thua dài nhất" />
                             </div>
-                            <div className="form-group">
-                                <div className="row gutters-xs">
-                                    <span className="col text-center">
-                                        <button
-                                            className="btn btn-warning-gradient"
-                                            id="btnMusterWeek"
-                                            data-bs-toggle="tooltip"
-                                            data-placement="top"
-                                            title=""
-                                            data-original-title="Nhận thưởng tuần"
-                                        >
-                                            <i className="fa fa-gift"></i> NHÂN THƯỞNG TUẦN
-                                        </button>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="table-responsive mb-3">
-                            <table className="table card-table table-vcenter text-nowrap table-bordered table-striped text-center">
-                                <thead className="badge-primary text-white">
-                                    <tr>
-                                        <th className="text-center text-white" colSpan="2">
-                                            Điểm Danh
-                                        </th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Mã phiên</td>
-                                        <td>#2024-01-14</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Thưởng</td>
-                                        <td>
-                                            <span className="">100,000 - 200,000</span>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Thắng phiên trước</td>
-                                        <td>hoan****</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div className="table-responsive mb-3">
-                            <table className="table card-table table-vcenter text-nowrap table-bordered table-striped text-center">
-                                <thead className="badge-primary text-white">
-                                    <tr>
-                                        <th className="text-center text-white">Mã Phiên</th>
-                                        <th className="text-center text-white">Tên đăng nhập</th>
-                                        <th className="text-center text-white">Số tiền nhận</th>
-                                    </tr>
-                                </thead>
-                                <tbody id="historyMuster">
-                                    <tr>
-                                        <td>
-                                            <span className="">#2023-11-08</span>
-                                        </td>
-                                        <td>hoan****</td>
-                                        <td>187,805</td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <span className="">#2023-11-07</span>
-                                        </td>
-                                        <td>lamt****</td>
-                                        <td>182,448</td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <span className="">#2023-11-06</span>
-                                        </td>
-                                        <td>chob****</td>
-                                        <td>199,892</td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <span className="">#2023-11-05</span>
-                                        </td>
-                                        <td>bigm****</td>
-                                        <td>152,427</td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <span className="">#2023-11-04</span>
-                                        </td>
-                                        <td>duym****</td>
-                                        <td>103,381</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div className="notice_diemdanh">
-                            <ul>
-                                <li> Điểm danh miễn phí hàng ngày.</li>
-                                <li>
-                                    Mỗi ngày sẽ có 1 phần quà random từ 100-200k cho 1 bạn may mắn nhất (Chỉ những ai
-                                    điểm danh mới được)
-                                </li>
-                                <li>Điểm danh đủ 7 ngày + Tổng cược &gt;500k trong tuần thì nhận thưởng 20k</li>
-                            </ul>
+                            <div className="title_vinh_danh_top">(Tổng cược tối thiểu 50k)</div>
+                            <div className="top_vinhdanh">TOP 1: Thưởng 100k</div>
+                            <div className="top_vinhdanh">TOP 2: Thưởng 50k</div>
+                            <div className="top_vinhdanh">TOP 3: Thưởng 30k</div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </ModelEvent>
     );
 }
 

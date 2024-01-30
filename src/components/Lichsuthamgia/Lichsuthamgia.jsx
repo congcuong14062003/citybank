@@ -10,8 +10,8 @@ function Lichsuthamgia() {
                         <th>NICKNAME</th>
                         <th>TIỀN CƯỢC</th>
                         <th>TIỀN NHẬN</th>
-                        <th>LOẠI GAME</th>
-                        <th>KEYWORD</th>
+                        <th>trò chơi</th>
+                        <th>đã chọn</th>
                         <th>KẾT QUẢ</th>
                         <th>THỜI GIAN</th>
                     </tr>

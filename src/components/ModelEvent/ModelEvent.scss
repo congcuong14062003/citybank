@@ -1,0 +1,122 @@
+.modal-dialog {
+    width: 608px;
+    .modal-content {
+        background-color: var(--primary-color);
+        max-width: max-content;
+        border: none;
+        border-radius: 12px;
+        .div-flag-attendance {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 37.5%;
+            height: 30.36%;
+            .img-backgroud-flag-attendance {
+                .icon_flag {
+                    position: absolute;
+                    top: 25px;
+                    left: 25px;
+                    width: 37.5%;
+                    height: 30.36%;
+                }
+            }
+        }
+        .modal-header-attendance {
+            border-bottom: none;
+            align-items: flex-start;
+            .modal-title-attendance {
+                font-size: var(--twenty-four-px);
+                width: 100%;
+                text-align: center;
+                margin-top: 50px;
+            }
+            .close_diemdanh {
+                position: relative;
+                padding: 0;
+                border: none;
+                background-color: transparent;
+                transition: 0.5s ease;
+                transition-property: color, background-color, border-color, box-shadow, opacity;
+                cursor: pointer;
+                right: 20px;
+            }
+        }
+        .modal-body {
+            .btn-success-gradient {
+                width: 290px;
+                padding: 10px 18px;
+                color: #fff;
+                border-radius: 8px;
+                background: rgba(127, 86, 217, 1) !important;
+                font-size: var(--sixteen-px);
+                font-weight: var(--primary-fontweight);
+            }
+            p.history_diemdanh {
+                color: #fff;
+                font-size: var(--eighteen-px);
+                font-weight: var(--primary-fontweight);
+                margin: 20px 0;
+            }
+            .btn-warning-gradient {
+                color: #fff;
+                background: linear-gradient(135deg, #f0ff00 0%, #f88c00 100%);
+                border-color: #fbb034;
+                width: 290px;
+                padding: 10px 18px;
+                border-radius: 8px;
+                font-size: var(--sixteen-px);
+                font-weight: var(--primary-fontweight);
+            }
+            .timeline-steps {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                .timeline-step {
+                    align-items: center;
+                    display: flex;
+                    flex-direction: column;
+                    position: relative;
+                    margin: 0.5rem 0rem;
+                    .timeline-content {
+                        text-align: center;
+                        width: 70px;
+                        p {
+                            font-size: var(--fourteen-px);
+                            font-weight: var(--secondary-fontweight);
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+            table {
+                thead {
+                    tr {
+                        font-size: var(--fourteen-px);
+                        font-weight: 700;
+                        text-transform: uppercase;
+                    }
+                }
+                tbody {
+                    td {
+                        color: #fff;
+                        font-size: var(--fourteen-px);
+                        font-weight: var(--third-fontweight);
+                    }
+                }
+            }
+            .table > :not(caption) > * > * {
+                background-color: transparent;
+            }
+            .badge-primary {
+                border-color: #f39346;
+                background-color: #d66001;
+            }
+            .notice_diemdanh {
+                background-color: #191738;
+                color: #fff;
+                padding: 10px 20px;
+                border-radius: 8px;
+            }
+        }
+    }
+}

@@ -1,0 +1,39 @@
+.subpage-wrapper {
+    .tong_choi_trong_ngay {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        p {
+            padding-right: 5px;
+            margin-bottom: 0;
+        }
+        span {
+            color: var(--active-color);
+        }
+    }
+    .dashbox__table {
+        border: 1px solid rgb(43, 40, 78);
+        width: 756px !important;
+        margin: auto;
+        margin-top: 20px;
+        th {
+            padding: 10px 0 !important;
+        }
+        td:first-child {
+            padding-left: 0 !important;
+        }
+        .dashbox__table-text {
+            text-align: center;
+            display: block !important;
+            &.chua_dat {
+                background: #B7000B;
+                color: #fff;
+                text-transform: uppercase;
+                padding: 2px 5px;
+                border-radius: 4px;
+                width: max-content;
+                margin: auto;
+            }
+        }
+    }
+}

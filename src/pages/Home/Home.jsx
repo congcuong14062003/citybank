@@ -12,6 +12,7 @@ import images from '../../assets/imgs';
 import DiemDanh from '../../components/DiemDanh/DiemDanh';
 import Header from '../../Layout/DefaultLayout/Header/Header';
 import Event from '../../components/Event/Event';
+import { LichSuChoiIcon } from '../../assets/icons/icons';
 function Home() {
     const [activeComponent, setActiveComponent] = useState(<ChanLeTaiXiu />);
     const handleComponentChange = (newComponent) => {
@@ -27,21 +28,21 @@ function Home() {
     }
 
     const handleOutsideClick = (e) => {
-        // Kiểm tra xem có phải là click bên ngoài component DiemDanh không
-        if (
-            showDiemDanh &&
-            e.target.closest('.diem_danh_container') === null
+        // // Kiểm tra xem có phải là click bên ngoài component DiemDanh không
+        // if (
+        //     showDiemDanh &&
+        //     e.target.closest('.diem_danh_container') === null
             
-        ) {
-            setShowDiemDanh(false);
-        }
-        if (
-            showSuKien &&
-            e.target.closest('.su_kien_container') === null
+        // ) {
+        //     setShowDiemDanh(false);
+        // }
+        // if (
+        //     showSuKien &&
+        //     e.target.closest('.su_kien_container') === null
             
-        ) {
-            setShowSuKien(false);
-        }
+        // ) {
+        //     setShowSuKien(false);
+        // }
 
     
     };
@@ -71,7 +72,6 @@ function Home() {
                     <QuyDinhLuatChoi />
                 </div>
             </div>
-            <CopyRightFooter />
             <div className="diem_danh_container" onClick={handleShowDiemDanh}>
                 <img src={images.diemdanh} alt="" />
             </div>

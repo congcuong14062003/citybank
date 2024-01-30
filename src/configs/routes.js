@@ -1,8 +1,12 @@
 const routes = {
     home: '/',
     
-    caidatbank: '/caidatbank',
+    caidatbank: '/cai-dat-bank',
     giftcode: '/giftcode',
-    nhiemvungay: '/nhiemvungay',
+    nhiemvungay: '/nhiem-vu-ngay',
+    nohu: '/no-hu',
+    lichsuchoi: '/lich-su-choi',
+    lienkettelegram: '/lien-ket-telegram',
+    doimatkhau: '/doi-mat-khau'
 };
 export default routes;

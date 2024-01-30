@@ -1,5 +1,5 @@
 import './SideBar.scss';
-import { CaiDatBankIcon, GiftcodeIcon, HomeIcon, LogoutIcon, NhiemVuNgayIcon } from '../../../assets/icons/icons';
+import { CaiDatBankIcon, DoiMatKhauIcon, GiftcodeIcon, HomeIcon, LichSuChoiIcon, LichSuChoiIconSideBar, LienKetTeleIcon, LogoutIcon, NhiemVuNgayIcon, NohuIcon } from '../../../assets/icons/icons';
 import Menu, { MenuItem } from './Menu';
 import config from '../../../configs';
 import images from '../../../assets/imgs';
@@ -24,6 +24,26 @@ function SideBar() {
             to: config.routes.nhiemvungay,
             icon: <NhiemVuNgayIcon />,
             title: 'nhiemvungay',
+        },
+        {
+            to: config.routes.nohu,
+            icon: <NohuIcon />,
+            title: 'nổ hũ',
+        },
+        {
+            to: config.routes.lichsuchoi,
+            icon: <LichSuChoiIconSideBar />,
+            title: 'lịch sử chơi',
+        },
+        {
+            to: config.routes.lienkettelegram,
+            icon: <LienKetTeleIcon />,
+            title: 'liên kết telegram',
+        },
+        {
+            to: config.routes.doimatkhau,
+            icon: <DoiMatKhauIcon />,
+            title: 'đổi mật khẩu',
         },
     ];
     return (

@@ -1,0 +1,17 @@
+.title_event_container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-size: var(--eighteen-px);
+    text-transform: uppercase;
+    justify-content: center;
+    padding: 10px 0;
+    .title {
+        font-weight: var(--primary-fontweight);
+        color: #fff;
+        margin-right: 5px;
+    }
+    .date_title {
+        color: var(--active-color);
+    }
+}
