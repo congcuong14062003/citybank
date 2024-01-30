@@ -1,0 +1,16 @@
+p {
+    padding: 0 20px;
+    line-height: 30px;
+    .data__input {
+        color: #667085;
+        border: 1px solid transparent;
+        height: 50px;
+        position: relative;
+        background-color: #fff;
+        font-size: var(--sixteen-px);
+        width: 100%;
+        border-radius: 8px;
+        padding: 0 20px;
+        font-family: 'Open Sans', sans-serif;
+    }
+}

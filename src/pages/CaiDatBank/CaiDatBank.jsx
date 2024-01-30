@@ -1,5 +1,6 @@
 import { CaiDatBankIcon } from '../../assets/icons/icons';
 import DashBox from '../../components/DashBox/DashBox';
+import InputForm from '../../components/InputForm/InputForm';
 import PrimaryButton from '../../components/PrimaryButton/PrimaryButton';
 import './CaiDatBank.scss';
 function CaiDatBank() {
@@ -7,13 +8,12 @@ function CaiDatBank() {
         <div className="caidatbank_container">
             <DashBox className="center_heading" title="cài đặt bank" icon={<CaiDatBankIcon />}>
                 <div class="subpage-wrapper">
-                    <form id="form-bank" method="post" action=''>
+                    <form id="form-bank" method="post" action="">
                         <p class="text-center err" id="err-msg"></p>
                         <p>
                             <select
                                 autocomplete="off"
                                 class="sign__selectjs"
-                                // style={{display: "none"}}
                             >
                                 <option selected="selected" value="">
                                     Chọn ngân hàng nhận tiền
@@ -24,26 +24,13 @@ function CaiDatBank() {
                                 <option value="4">BIDV - TMCP Đầu tư và Phát triển Việt Nam</option>
                                 <option value="5">BAOVIET - TMCP Bảo Việt</option>
                             </select>
-                            {/* <div class="ss-main sign__selectjs">
-                                <div class="ss-values">
-                                    <div class="ss-single">Chọn ngân hàng nhận tiền</div>
-                                </div>
-                                <div class="ss-deselect ss-hide">
-                                
-                                </div>
-                          
-                            </div> */}
                         </p>
+
+                            <InputForm placeholder="Nhập Số Tài Khoản" />
+
+                            <InputForm placeholder=" Nhập Tên Chủ Tài Khoản" />
+                            
                         <p>
-                            <input class="sign__input" placeholder="Nhập Số Tài Khoản" type="text" />
-                        </p>
-                        <p>
-                            <input class="sign__input" placeholder="Nhập Tên Chủ Tài Khoản" type="text" />
-                        </p>
-                        <p>
-                            {/* <button class="sign__btn" type="submit">
-                                <span>CẬP NHẬT</span>
-                            </button> */}
                             <PrimaryButton title="cập nhật" />
                         </p>
                     </form>

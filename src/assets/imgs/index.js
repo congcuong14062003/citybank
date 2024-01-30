@@ -8,6 +8,7 @@ const images = {
     sukienhot: require('./sukienhot.png'),
     diemdanh: require('./diemdanh.png'),
     modalheader: require('./modalheader.png'),
+    sukien: require('./sukien.png'),
 } 
 
 export default images
