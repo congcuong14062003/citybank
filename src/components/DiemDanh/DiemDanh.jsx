@@ -4,7 +4,7 @@ import ModelEvent from '../ModelEvent/ModelEvent';
 import './DiemDanh.scss';
 function DiemDanh({ handleHiddenDiemDanh }) {
     return (
-        <ModelEvent onClick={handleHiddenDiemDanh}>
+        <ModelEvent title onClick={handleHiddenDiemDanh}>
             <div className="modal-body">
                 <div className="row mt-2 mb-2">
                     <div className="form-group">

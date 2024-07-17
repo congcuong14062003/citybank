@@ -7,6 +7,7 @@ import './Event.scss';
 function Event({handleHiddenSuKien}) {
     return (
         <ModelEvent onClick={handleHiddenSuKien}>
+            
             <div className="modal-body">
                 <div className="row">
                     <div className="profile__content_event">

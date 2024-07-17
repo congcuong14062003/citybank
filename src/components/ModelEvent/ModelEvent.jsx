@@ -1,7 +1,7 @@
 import { CloseBtn, FlagDiemDanh } from '../../assets/icons/icons';
 import images from '../../assets/imgs';
 import './ModelEvent.scss';
-function ModelEvent({ children, flag, onClick }) {
+function ModelEvent({ children, flag, onClick, title }) {
     return (
         <div
             className="modal fade show"
@@ -23,9 +23,6 @@ function ModelEvent({ children, flag, onClick }) {
                         </div>
                     </div>
                     <div className="modal-header-attendance modal-header">
-                        <h5 className="modal-title-attendance modal-title" style={{ color: 'white' }}>
-                            ĐIỂM DANH NHẬN QUÀ MIỄN PHÍ
-                        </h5>
                         <button type="button" className="close close_diemdanh" onClick={onClick}>
                             <span aria-hidden="true" style={{ color: 'white' }}>
                                 <CloseBtn />
